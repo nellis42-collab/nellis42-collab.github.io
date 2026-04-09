@@ -1,30 +1,68 @@
-<nav>
-  <h2>Twinstreams Solutions</h2>
-
-  <div>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="employees.html">Team</a>
-    <a href="contact.html">Contact</a>
-  </div>
-</nav>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <title>Contact</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<nav class="navbar">
 
+  <div class="logo-area">
+    <img src="images/charles-logo.png" class="logo-small">
+    <h2>Twin Streams Property Solutions LLC</h2>
+  </div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="employees.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+</nav>
 
 <section class="page">
+
   <h1>Contact Us</h1>
+
   <p>Email: contact@twinstreams.com</p>
-  <p>We respond within 24–48 hours.</p>
+  <p>Phone: (123) 456-7890</p>
+
+  <h2>Request a Quote</h2>
+
+  <form class="form">
+
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="tel" placeholder="Phone Number" required>
+
+    <textarea placeholder="Tell us about your project"></textarea>
+
+    <button type="submit">Submit Request</button>
+
+  </form>
+
 </section>
 
 </body>
 </html>
+
+<form class="form"
+      action="https://formspree.io/f/xqegvzyj"
+      method="POST">
+
+  <input type="text" name="name" placeholder="Full Name" required>
+
+  <input type="email" name="email" placeholder="Email Address" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <textarea name="message" placeholder="Describe your project" required></textarea>
+
+  <button type="submit">Send Request</button>
+
+</form>

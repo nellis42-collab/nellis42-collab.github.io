@@ -7,71 +7,43 @@ body {
   color: #1f2937;
 }
 
-/* =========================
-   NAVBAR (LANDSCAPING STYLE)
-   ========================= */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 18px 60px;
-
-  background: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1500&q=80") center/cover;
+  background: #14532d;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-/* dark overlay */
-.navbar::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(20, 83, 45, 0.85);
-}
-
-/* keep content above overlay */
-.navbar * {
-  position: relative;
-}
-
-/* logo area */
 .logo-area {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.logo {
-  width: 45px;
-  height: 45px;
-  object-fit: contain;
-  border-radius: 8px;
+.logo-small {
+  width: 40px;
+  height: 40px;
 }
 
 .logo-area h2 {
   color: white;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 16px;
   margin: 0;
 }
 
-/* navigation links */
 .nav-links a {
   color: #dcfce7;
   margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
 }
 
-.nav-links a:hover {
-  color: white;
-}
-
-/* =========================
-   HERO SECTION
-   ========================= */
+/* HERO */
 .hero {
   text-align: center;
   padding: 120px 20px;
@@ -79,70 +51,55 @@ body {
   color: white;
 }
 
+.hero-logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
 .hero h1 {
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: 42px;
 }
 
 .hero p {
-  max-width: 650px;
+  max-width: 600px;
   margin: 20px auto;
-  color: #d1fae5;
-  font-size: 18px;
 }
 
-.hero button {
-  padding: 12px 22px;
-  border: none;
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary {
   background: white;
   color: #14532d;
-  font-weight: bold;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-.hero button:hover {
-  transform: scale(1.05);
+.btn-secondary {
+  background: #14532d;
+  color: white;
 }
 
-/* =========================
-   PAGE CONTENT
-   ========================= */
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e5f5ea;
+}
+
+/* PAGE */
 .page {
   max-width: 900px;
   margin: auto;
   padding: 60px 20px;
-  line-height: 1.7;
 }
 
-/* =========================
-   EMPLOYEE CARDS
-   ========================= */
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 220px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* =========================
-   GALLERY
-   ========================= */
+/* GALLERY */
 .gallery {
   padding: 60px 20px;
   text-align: center;
@@ -156,42 +113,38 @@ body {
   margin: auto;
 }
 
-.grid img {
+.card img {
   width: 100%;
   border-radius: 12px;
-  transition: 0.3s;
 }
 
-.grid img:hover {
-  transform: scale(1.03);
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 450px;
 }
 
-/* gallery captions */
-.grid p {
-  margin-top: 8px;
-  font-size: 14px;
-  color: #4b5563;
+.form input,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-/* =========================
-   LISTS (SERVICES)
-   ========================= */
-ul {
-  max-width: 600px;
-  margin: auto;
-  padding-left: 20px;
+.form button {
+  background: #14532d;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-ul li {
-  margin: 10px 0;
-}
-
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
   color: #6b7280;
-  font-size: 14px;
 }
