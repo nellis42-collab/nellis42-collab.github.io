@@ -234,3 +234,55 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
+
+/* =========================
+   SERVICES 2-COLUMN LAYOUT
+   ========================= */
+
+.services {
+  background: #f4f7f5;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+  align-items: start;
+}
+
+.services-list h1 {
+  margin-bottom: 20px;
+}
+
+.services-text h2 {
+  color: #14532d;
+  margin-bottom: 10px;
+}
+
+.services-text p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-section {
+  text-align: center;
+}
+
+.about-section h1 {
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
