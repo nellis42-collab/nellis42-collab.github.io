@@ -60,6 +60,39 @@ html, body {
   padding: 120px 20px;
   background: linear-gradient(to right, #14532d, #166534);
   color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🌿 NATURE GLOW EFFECT */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(134,239,172,0.45), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(187,247,208,0.45), transparent 70%);
+  filter: blur(40px);
+  z-index: 0;
+}
+
+/* keep content above glow */
+.hero * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-logo {
@@ -80,12 +113,15 @@ html, body {
    BUTTONS
    ========================= */
 .btn-primary,
-.btn-secondary {
+.btn-secondary,
+.form button {
   display: inline-block;
   padding: 12px 20px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .btn-primary {
@@ -98,6 +134,13 @@ html, body {
   color: white;
 }
 
+.btn-primary:hover,
+.btn-secondary:hover,
+.form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
 /* =========================
    PAGE SECTIONS
    ========================= */
@@ -105,7 +148,9 @@ html, body {
   max-width: 900px;
   margin: auto;
   padding: 60px 20px;
-  background: #f4f7f5;
+  background: linear-gradient(to bottom, #f4f7f5, #eef7ef);
+  border-top: 1px solid rgba(34, 197, 94, 0.08);
+  border-bottom: 1px solid rgba(34, 197, 94, 0.08);
 }
 
 /* =========================
@@ -160,85 +205,12 @@ html, body {
   color: white;
   padding: 12px;
   border: none;
-  border-radius: 8px;
   cursor: pointer;
-}
-
-/* =========================
-   FOOTER
-   ========================= */
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #6b7280;
-}
-
-/* =========================
-   NATURE BACKGROUND OVERLAYS
-   ========================= */
-
-.hero {
-  position: relative;
-  overflow: hidden;
-}
-
-/* soft leaf glow */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: -80px;
-  left: -80px;
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(34,197,94,0.25), transparent 70%);
-  z-index: 0;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -100px;
-  right: -100px;
-  width: 350px;
-  height: 350px;
-  background: radial-gradient(circle, rgba(21,128,61,0.25), transparent 70%);
-  z-index: 0;
-}
-
-/* keep content above effects */
-.hero * {
-  position: relative;
-  z-index: 1;
-}
-
-.page {
-  background: linear-gradient(
-    to bottom,
-    #f4f7f5,
-    #eef7ef
-  );
-  border-top: 1px solid rgba(34, 197, 94, 0.08);
-  border-bottom: 1px solid rgba(34, 197, 94, 0.08);
-}
-
-.btn-primary,
-.btn-secondary,
-.form button {
-  transition: all 0.25s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.btn-primary:hover,
-.btn-secondary:hover,
-.form button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
 }
 
 /* =========================
    SERVICES 2-COLUMN LAYOUT
    ========================= */
-
 .services {
   background: #f4f7f5;
 }
@@ -252,7 +224,6 @@ footer {
   align-items: start;
 }
 
-/* MATCH HEADINGS */
 .services-list h1,
 .services-text h2 {
   font-size: 28px;
@@ -261,7 +232,6 @@ footer {
   color: #14532d;
 }
 
-/* MATCH BODY TEXT */
 .services-list ul,
 .services-text p {
   font-size: 16px;
@@ -269,12 +239,15 @@ footer {
   color: #1f2937;
 }
 
-/* CLEAN LIST STYLE */
 .services-list ul {
   padding-left: 20px;
 }
 
-/* MOBILE FIX */
+.services-list ul li {
+  margin-bottom: 8px;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
   .services-grid {
     grid-template-columns: 1fr;
@@ -286,6 +259,7 @@ footer {
    ========================= */
 .about-section {
   text-align: center;
+  padding: 80px 20px;
 }
 
 .about-section h1 {
@@ -296,4 +270,13 @@ footer {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #6b7280;
 }
