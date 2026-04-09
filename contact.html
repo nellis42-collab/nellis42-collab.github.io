@@ -3,66 +3,59 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Contact</title>
+  <title>Contact - Twin Streams Property Solutions LLC</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <nav class="navbar">
 
   <div class="logo-area">
-    <img src="images/charles-logo.png" class="logo-small">
+    <img src="images/charles-logo.png" class="logo-small" alt="Logo">
     <h2>Twin Streams Property Solutions LLC</h2>
   </div>
 
   <div class="nav-links">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
-    <a href="employees.html">Team</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Request Quote</a>
   </div>
 
 </nav>
+
+<!-- CONTACT PAGE WRAPPER (FIXES WHITE SCREEN ISSUE) -->
+<div class="page-wrapper">
 
 <section class="page">
 
   <h1>Contact Us</h1>
 
-  <p>Email: contact@twinstreams.com</p>
-  <p>Phone: (123) 456-7890</p>
+  <p>We respond within 24 hours with a free estimate.</p>
 
-  <h2>Request a Quote</h2>
+  <h2>Request a Free Quote</h2>
 
-  <form class="form">
+  <!-- FORMSPREE WORKING FORM -->
+  <form class="form"
+        action="https://formspree.io/f/xqegvzyj"
+        method="POST">
 
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email" required>
-    <input type="tel" placeholder="Phone Number" required>
+    <input type="text" name="name" placeholder="Full Name" required>
 
-    <textarea placeholder="Tell us about your project"></textarea>
+    <input type="email" name="email" placeholder="Email Address" required>
 
-    <button type="submit">Submit Request</button>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <textarea name="message" placeholder="Describe your project" required></textarea>
+
+    <button type="submit">Send Request</button>
 
   </form>
 
 </section>
 
+</div>
+
 </body>
 </html>
-
-<form class="form"
-      action="https://formspree.io/f/xqegvzyj"
-      method="POST">
-
-  <input type="text" name="name" placeholder="Full Name" required>
-
-  <input type="email" name="email" placeholder="Email Address" required>
-
-  <input type="tel" name="phone" placeholder="Phone Number" required>
-
-  <textarea name="message" placeholder="Describe your project" required></textarea>
-
-  <button type="submit">Send Request</button>
-
-</form>

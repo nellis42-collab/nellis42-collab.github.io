@@ -7,7 +7,9 @@ body {
   color: #1f2937;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+   ========================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,6 +30,7 @@ body {
 .logo-small {
   width: 40px;
   height: 40px;
+  object-fit: contain;
 }
 
 .logo-area h2 {
@@ -43,7 +46,9 @@ body {
   font-weight: 500;
 }
 
-/* HERO */
+/* =========================
+   HERO
+   ========================= */
 .hero {
   text-align: center;
   padding: 120px 20px;
@@ -52,7 +57,7 @@ body {
 }
 
 .hero-logo {
-  width: 200px;
+  width: 220px;
   margin-bottom: 20px;
 }
 
@@ -65,7 +70,9 @@ body {
   margin: 20px auto;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+   ========================= */
 .btn-primary,
 .btn-secondary {
   display: inline-block;
@@ -85,21 +92,27 @@ body {
   color: white;
 }
 
-/* CTA */
+/* =========================
+   CTA
+   ========================= */
 .cta {
   text-align: center;
   padding: 60px 20px;
   background: #e5f5ea;
 }
 
-/* PAGE */
+/* =========================
+   PAGE
+   ========================= */
 .page {
   max-width: 900px;
   margin: auto;
   padding: 60px 20px;
 }
 
-/* GALLERY */
+/* =========================
+   GALLERY
+   ========================= */
 .gallery {
   padding: 60px 20px;
   text-align: center;
@@ -118,7 +131,9 @@ body {
   border-radius: 12px;
 }
 
-/* FORM */
+/* =========================
+   FORM
+   ========================= */
 .form {
   display: flex;
   flex-direction: column;
@@ -142,9 +157,24 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
 footer {
   text-align: center;
   padding: 30px;
   color: #6b7280;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #f4f7f5;
+  min-height: 100%;
+}
+
+/* prevents blank white pages */
+.page {
+  background: #f4f7f5;
+  min-height: 100vh;
 }
