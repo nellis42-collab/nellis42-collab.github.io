@@ -139,3 +139,31 @@ footer {
   color: #64748b;
   font-size: 14px;
 }
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <h2>Twinstreams Solutions</h2>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="employees.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<section class="page">
+  <h1>Contact Us</h1>
+  <p>Email: contact@twinstreams.com</p>
+  <p>We respond within 24–48 hours.</p>
+</section>
+
+</body>
+</html>
