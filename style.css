@@ -8,9 +8,9 @@ body {
 }
 
 /* =========================
-   NAVBAR (NATURE BACKGROUND)
+   NAVBAR (LANDSCAPING STYLE)
    ========================= */
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,26 +22,42 @@ nav {
   z-index: 1000;
 }
 
-/* dark overlay so text is readable */
-nav::before {
+/* dark overlay */
+.navbar::before {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(20, 83, 45, 0.85);
 }
 
-/* keep text above overlay */
-nav * {
+/* keep content above overlay */
+.navbar * {
   position: relative;
 }
 
-nav h2 {
+/* logo area */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.logo-area h2 {
   color: white;
   font-weight: 700;
   letter-spacing: 1px;
+  margin: 0;
 }
 
-nav a {
+/* navigation links */
+.nav-links a {
   color: #dcfce7;
   margin-left: 20px;
   text-decoration: none;
@@ -49,7 +65,7 @@ nav a {
   transition: 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
   color: white;
 }
 
@@ -91,7 +107,7 @@ nav a:hover {
 }
 
 /* =========================
-   PAGE SECTIONS
+   PAGE CONTENT
    ========================= */
 .page {
   max-width: 900px;
@@ -125,7 +141,7 @@ nav a:hover {
 }
 
 /* =========================
-   PROJECT GALLERY
+   GALLERY
    ========================= */
 .gallery {
   padding: 60px 20px;
@@ -150,11 +166,32 @@ nav a:hover {
   transform: scale(1.03);
 }
 
+/* gallery captions */
+.grid p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
 /* =========================
-   CONTACT / FOOTER STYLE
+   LISTS (SERVICES)
+   ========================= */
+ul {
+  max-width: 600px;
+  margin: auto;
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+/* =========================
+   FOOTER
    ========================= */
 footer {
   text-align: center;
   padding: 30px;
   color: #6b7280;
+  font-size: 14px;
 }
