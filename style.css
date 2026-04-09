@@ -252,18 +252,26 @@ footer {
   align-items: start;
 }
 
-.services-list h1 {
-  margin-bottom: 20px;
-}
-
+/* MATCH HEADINGS */
+.services-list h1,
 .services-text h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
   color: #14532d;
-  margin-bottom: 10px;
 }
 
+/* MATCH BODY TEXT */
+.services-list ul,
 .services-text p {
+  font-size: 16px;
   line-height: 1.6;
-  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+/* CLEAN LIST STYLE */
+.services-list ul {
+  padding-left: 20px;
 }
 
 /* MOBILE FIX */
@@ -273,6 +281,9 @@ footer {
   }
 }
 
+/* =========================
+   ABOUT (WHO WE ARE)
+   ========================= */
 .about-section {
   text-align: center;
 }
