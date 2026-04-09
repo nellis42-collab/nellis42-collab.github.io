@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+/* PROJECTS */
+.projects {
+  background: #f4f4f4;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  margin: 10px;
+  display: inline-block;
+  width: 200px;
+}
