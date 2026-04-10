@@ -1,55 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Twin Streams Property Solutions LLC for a free landscaping quote. Call (267) 733-2483 or email us today."
+    />
+    <title>Contact - Twin Streams Property Solutions LLC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Contact - Twin Streams Property Solutions LLC</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html" class="logo-area">
+        <img src="images/charles-logo.png" class="logo-small" alt="Logo" />
+        <h2>Twin Streams Property Solutions LLC</h2>
+      </a>
 
-<body>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="contact.html" class="nav-link nav-cta active">Contact</a>
+      </div>
+    </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar">
+    <!-- CONTACT PAGE -->
+    <section class="page contact-page">
+      <div class="contact-container">
+        <div class="contact-section">
+          <h1>Get in Touch</h1>
+          <p class="contact-intro">
+            Ready to transform your property? Reach out to us today for a free
+            consultation and quote.
+          </p>
 
-  <div class="logo-area">
-    <img src="images/charles-logo.png" class="logo-small" alt="Logo">
-    <h2>Twin Streams Property Solutions LLC</h2>
-  </div>
+          <div class="contact-info-grid">
+            <div class="contact-info-item">
+              <h3>Phone</h3>
+              <p><a href="tel:(267)733-2483">(267) 733-2483</a></p>
+            </div>
+            <div class="contact-info-item">
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:twinstreamspropertysolutions@protonmail.com"
+                  >twinstreamspropertysolutions@protonmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="contact.html">Contact</a>
-  </div>
+        <div class="contact-section">
+          <h2>Request a Quote</h2>
+          <p class="form-intro">
+            Fill out the form below and we'll get back to you within 24 hours.
+          </p>
 
-</nav>
+          <form
+            class="form"
+            action="https://formspree.io/f/xqegvzyj"
+            method="POST"
+          >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Describe your project"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<!-- CONTACT PAGE -->
-<section class="page">
-
-  <h1>Contact Us</h1>
-
-  <div class="contact-info">
-  <p><strong>Email:</strong> twinstreamspropertysolutions@protonmail.com</p>
-  <p><strong>Phone:</strong> (267) 733-2483</p>
-</div>
-
-  <h2>Request a Quote</h2>
-
-  <form class="form"
-        action="https://formspree.io/f/xqegvzyj"
-        method="POST">
-
-    <input type="text" name="name" placeholder="Full Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <input type="tel" name="phone" placeholder="Phone Number" required>
-    <textarea name="message" placeholder="Describe your project" required></textarea>
-
-    <button type="submit">Send Request</button>
-
-  </form>
-
-</section>
-
-</body>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Twin Streams Property Solutions LLC</h3>
+          <p>Professional landscaping & property maintenance services</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li>Lawn Care</li>
+            <li>Landscaping</li>
+            <li>Property Maintenance</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Twin Streams Property Solutions LLC. All rights reserved.
+          | Fully Licensed and Insured
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
